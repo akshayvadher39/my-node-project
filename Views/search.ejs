@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Search</title>
+
+    <link rel="stylesheet" href="search.css">
+    <!-- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">BMW</div>
+
+        <ul>
+            <li><a href="home.ejs">Home</a></li>
+            <li><a href="search.ejs">Search now</a></li>
+            <li><a href="testdrive.ejs">Request Test Drive</a></li>
+            <li><a href="configure.ejs">Configure & Price</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="page">
+
+        <!-- Top Search Header -->
+        <div class="search-header">
+
+            <div class="left">
+                <h2>Search Vehicles</h2>
+                <p>Showing 6 Vehicles</p>
+            </div>
+
+            <div class="right">
+                <select>
+                    <option>Default Sorting</option>
+                    <option>Price Low to High</option>
+                    <option>Price High to Low</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <!-- Vehicle Grid -->
+
+        <div class="vehicle-grid">
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFnTUGCcKj85cRoH7QRzMESV59VMb3G6bUJ1rjGRPixrQbzC6yFnJl385bd0bgMESuT8I7yJRDlBgDFUdl38pb7naIMES33l382b33NcYitHzdmMb3NZZcYiwJ6GoExmoGl382jTG%25o6drjGo9RoUUJgcRoj9y6cYiw956cRocJq0zVJvp6yyIJgTrl3ilUR%250cRScH7wuMbnMdezkyJGy5QJNrQ%25r9sRnW8zWuBikqogqaC47l3ilUQT9cRScHb8%25MbnMdQ2zyJGy5iRErQ%25r98UnW8zWuuUbqogqaD%25Fl3ilUE80cRScHzo7MbnMdQzOyJGy5idtrQ%25r90bDW8zWuESkqogqaFHdl3ilU%253RcRScHz83MbnMdmgRyJGy53sBrQ%25r9SK3W8zWuBDjqogqa3J%25l3ilURQacRScHzQ5MbnMdg80yJGy5iKnrQ%25r9SejW8zWunDjqogqaRGul3ilUjQNcRScH48WMbnMdjIgyJGy5B3vrQ%25r9SgAW8zWuKbIqogqaJ25l3ilUR%256cRScHbj7MbnMd030yJGy5Q4BrQ%25r9SaaW8zWuDJCqogqaYIQl3ilUEF5cRScHFNbMbnMd03RyJGy5BRErQbZUe8nIulBgba93l38vontCcYiDUbl38HrjGdiu"
+                    alt="">
+
+                <div class="content">
+
+                    <h3>BMW X7 xDrive40d DPE 7 Seater</h3>
+
+                    <span class="badge">New Car</span>
+
+                    <div class="price-row">
+
+                        <div>
+                            <small>Monthly Instalment</small>
+                            <h4>₹1,51,419</h4>
+                        </div>
+
+                        <div>
+                            <small>Price Information</small>
+                            <h4>₹1,30,70,000</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="specs">
+
+                        <div>
+                            <i class="fa-solid fa-gas-pump"></i>
+                            Diesel
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-gear"></i>
+                            Automatic
+                        </div>
+
+                    </div>
+
+                    <p>Performance 250 kW (340 PS)</p>
+                    <p>Fuel Type Diesel</p>
+
+                    <div class="dealer">
+                        <i class="fa-solid fa-location-dot"></i>
+                        FU Mandhan Motors Pvt. Ltd. Raipur
+                    </div>
+
+                    <button>Show vehicle details</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Duplicate cards -->
+
+            <div class="card">
+                <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFnTUGCcKj85cRoH7QRzMESV59VMb3G6bUJ1rjGRPixrQbzC6yFnJl385bd0bgMESuT8I7yJRDlBgDFUdl38pb7naIMES33l382b33NcYitHzdmMb3NZZcYiwJ6GoExmoGl382jTG%25o6drjGo9RoUUJgcRoj9y6cYiw956cRocJq0zVJvp6yyIJgTrl3ilUR%250cRScH7wuMbnMdezkyJGy5QJNrQ%25r9sRnW8zWuBikqogqaC47l3ilUQT9cRScHb8%25MbnMdQ2zyJGy5iRErQ%25r98UnW8zWuuUbqogqaD%25Fl3ilUE80cRScHzo7MbnMdQzOyJGy5idtrQ%25r90bDW8zWuESkqogqaFHdl3ilU%253RcRScHz83MbnMdmgRyJGy53sBrQ%25r9SK3W8zWuBDjqogqa3J%25l3ilURQacRScHzQ5MbnMdg80yJGy5iKnrQ%25r9SejW8zWunDjqogqaRGul3ilUjQNcRScH48WMbnMdjIgyJGy5B3vrQ%25r9SgAW8zWuKbIqogqaJ25l3ilUR%256cRScHbj7MbnMd030yJGy5Q4BrQ%25r9SaaW8zWuDJCqogqaYIQl3ilUEF5cRScHFNbMbnMd03RyJGy5BRErQbZUe8nIulBgba93l38vontCcYiDUbl38HrjGdiu"
+                    alt="">
+                <div class="content">
+                    <h3>BMW X7 xDrive40d DPE 7 Seater</h3>
+                    <span class="badge">New Car</span>
+
+                    <div class="price-row">
+                        <div>
+                            <small>Monthly Instalment</small>
+                            <h4>₹1,51,419</h4>
+                        </div>
+
+                        <div>
+                            <small>Price Information</small>
+                            <h4>₹1,30,70,000</h4>
+                        </div>
+                    </div>
+
+                    <div class="specs">
+                        <div><i class="fa-solid fa-gas-pump"></i> Diesel</div>
+                        <div><i class="fa-solid fa-gear"></i> Automatic</div>
+                    </div>
+
+                    <p>Performance 250 kW (340 PS)</p>
+                    <p>Fuel Type Diesel</p>
+
+                    <div class="dealer">
+                        <i class="fa-solid fa-location-dot"></i>
+                        SA KUN Motoren Pvt. Ltd.
+                    </div>
+
+                    <button>Show vehicle details</button>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+
+                <img
+                    src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFnTUGCcKj85cRoH7QRzMESV59VMb3G6bUJ1rjGRPixrQbzC6yFnJl385bd0bgMESunDJiyJRDlBgDFUdl38pb7naIMES33l382b33NcYitH%25gfMb3NZZcYiwJ6GoExmoGl382jTG%25o6drjGo9RoUUddcRoj9y6cYiw956cRocJq0zVJvp6yyIJgTrl3ilUEFGcRScHJ12MbnMdezJyJGy5QJNrQ%25r9Y3FW8zWuBDjqogqaabdl3ilU4tQcRScH48gMbnMdJoiyJGy5isDrQ%25r98R5W8zWunxbqogqaYV3l3ilU%2575cRScHbdiMbnMdmsYyJGy5QARrQ%25r901SW8zWuBAuqogqaJh5l3ilU%25DocRScH8ZgMbnMdgC0yJGy5i4DrQ%25r9snYW8zWuBJjqogqaYQ4l3ilUE68cRScHFj9MbnMd03RyJRTa4QSN9q0z8u96qoQk8S2DlBgKaRqoQUyFnHg9">
+
+                <div class="content">
+
+                    <h3>BMW iX1 eDrive20L</h3>
+
+                    <span class="badge">New Car</span>
+
+                    <div class="price-row">
+
+                        <div>
+                            <small>Monthly Instalment</small>
+                            <h4>₹59,293</h4>
+                        </div>
+
+                        <div>
+                            <small>Price Information</small>
+                            <h4>₹52,40,000</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="specs">
+
+                        <div><i class="fa-solid fa-bolt"></i> Electric</div>
+
+                        <div><i class="fa-solid fa-gear"></i> Automatic</div>
+
+                    </div>
+
+                    <p>Performance 150 kW (204 PS)</p>
+                    <p>Fuel Type Electric</p>
+
+                    <div class="dealer">
+                        <i class="fa-solid fa-location-dot"></i>
+                        SA KUN Motoren Pvt. Ltd.
+                    </div>
+
+                    <button>Show vehicle details</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>Contact & Info</h3>
+
+                <ul>
+
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Online Genius</a></li>
+                    <li><a href="#">Accident Support</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Assistance & Services</h3>
+
+                <ul>
+
+                    <li><a href="#">Book Service</a></li>
+                    <li><a href="#">BMW App</a></li>
+                    <li><a href="#">Connected Drive</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Models</h3>
+
+                <ul>
+
+                    <li><a href="#">BMW X Series</a></li>
+                    <li><a href="#">BMW 7 Series</a></li>
+                    <li><a href="#">BMW 5 Series</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Choose & Buy</h3>
+
+                <ul>
+
+                    <li><a href="#">Build Your Own</a></li>
+                    <li><a href="search.html">Search Cars</a></li>
+                    <li><a href="test-drive.html">Test Drive</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="copy">
+
+            © 2026 BMW. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
